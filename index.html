@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עידן כהן | דיאטן קליני</title>
+    
+    <!-- טוען את העיצוב (Tailwind) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- טוען את האייקונים (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 selection:bg-teal-200 selection:text-teal-900">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2 text-teal-700 font-bold text-xl">
+                <i data-lucide="activity" class="h-6 w-6"></i>
+                <span>עידן כהן | דיאטן קליני</span>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-teal-600 transition-colors">אודות</a>
+                <a href="#services" class="hover:text-teal-600 transition-colors">שיטת הטיפול</a>
+                <a href="#testimonials" class="hover:text-teal-600 transition-colors">המלצות</a>
+            </nav>
+            <a href="#contact" class="bg-teal-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors shadow-sm">
+                קביעת ייעוץ
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-24 lg:pt-32 lg:pb-40 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-12">
+            <div class="flex-1 text-right z-10">
+                <div class="inline-block bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-semibold mb-6">
+                    מומחה לגסטרואנטרולוגיה ותזונה
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+                    להחזיר את <span class="text-teal-600">השקט</span> לבטן שלך.
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+                    סובלים מנפיחות, גזים, צרבות או תסמונת המעי הרגיז (IBS)? 
+                    טיפול תזונתי מותאם אישית מבוסס מדע יכול לשנות לכם את החיים ולהחזיר את תחושת הקלילות.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-teal-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-teal-700 transition-colors text-center shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                        בואו נדבר <i data-lucide="activity" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#services" class="bg-white text-slate-700 border border-slate-300 px-8 py-4 rounded-full text-lg font-bold hover:bg-slate-50 transition-colors text-center flex items-center justify-center">
+                        איך זה עובד?
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 relative z-10">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                    <img 
+                        src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1000" 
+                        alt="תזונה בריאה לבעיות עיכול" 
+                        class="w-full object-cover h-[400px] lg:h-[500px]"
+                        onerror="this.src='https://via.placeholder.com/600x400?text=Healthy+Food'"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-tr from-teal-900/20 to-transparent"></div>
+                </div>
+                <!-- Decorative Elements -->
+                <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-teal-200 rounded-full blur-2xl opacity-60 z-0"></div>
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-emerald-200 rounded-full blur-3xl opacity-60 z-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">הדרך לבטן רגועה מתחילה כאן</h2>
+                <p class="text-slate-600">
+                    הגישה שלי משלבת ידע קליני מתקדם, פרוטוקולים מוכחים מחקרית (כמו FODMAP) והתאמה אישית לאורח החיים שלך.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="activity" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">אבחון מקיף</h3>
+                    <p class="text-slate-600">
+                        נעבור על הבדיקות הרפואיות שלך, ההיסטוריה הרפואית והרגלי התזונה כדי להבין בדיוק מה גורם לבעיה.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="utensils" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">תפריט מותאם אישית</h3>
+                    <p class="text-slate-600">
+                        בניית תוכנית תזונתית שלא רק מקלה על התסמינים, אלא גם טעימה, מזינה וקלה ליישום ביומיום שלך.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ליווי ותמיכה</h3>
+                    <p class="text-slate-600">
+                        אתם לא לבד. אני זמין לשאלות, התייעצויות ודיוקים לאורך כל הדרך עד שנגיע לתוצאה הרצויה.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conditions Section -->
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="flex-1 text-right">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">באילו מצבים אני מטפל?</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle-2" class="text-teal-400 w-6 h-6 flex-shrink-0"></i>
+                            <span class="text-lg">תסמונת המעי הרגיז (IBS)</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle-2" class="text-teal-400 w-6 h-6 flex-shrink-0"></i>
+                            <span class="text-lg">מחלות מעי דלקתיות (קרוהן וקוליטיס)</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle-2" class="text-teal-400 w-6 h-6 flex-shrink-0"></i>
+                            <span class="text-lg">רפלוקס וצרבות (GERD)</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle-2" class="text-teal-400 w-6 h-6 flex-shrink-0"></i>
+                            <span class="text-lg">נפיחות בטנית וגזים</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle-2" class="text-teal-400 w-6 h-6 flex-shrink-0"></i>
+                            <span class="text-lg">עצירות או שלשולים כרוניים</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle-2" class="text-teal-400 w-6 h-6 flex-shrink-0"></i>
+                            <span class="text-lg">צליאק ורגישות לגלוטן</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1 bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                    <i data-lucide="message-circle" class="w-10 h-10 text-teal-400 mb-6"></i>
+                    <blockquote class="text-xl leading-relaxed text-slate-200 italic mb-6">
+                        "אחרי שנים של כאבי בטן ונפיחות שהרסו לי את איכות החיים, הגעתי לעידן. בתוך פחות מחודש של התאמות קטנות בתזונה - הבטן נרגעה לגמרי. איזה הבדל!"
+                    </blockquote>
+                    <div class="font-bold text-teal-400">- מיכל, מטופלת בקליניקה</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-24 bg-teal-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-teal-100">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">מוכנים להרגיש טוב יותר?</h2>
+                    <p class="text-slate-600">השאירו פרטים ואחזור אליכם בהקדם לשיחת התייעצות קצרה ללא התחייבות.</p>
+                </div>
+
+                <!-- הודעת הצלחה (מוסתרת בהתחלה) -->
+                <div id="successMessage" class="hidden bg-emerald-50 text-emerald-800 p-6 rounded-xl flex items-center flex-col text-center">
+                    <i data-lucide="check-circle-2" class="w-12 h-12 mb-4 text-emerald-500"></i>
+                    <h3 class="text-xl font-bold mb-2">תודה, פנייתך התקבלה!</h3>
+                    <p>אצור איתך קשר בהקדם האפשרי.</p>
+                </div>
+
+                <!-- הטופס -->
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-700 mb-2">שם מלא</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all"
+                                placeholder="ישראל ישראלי"
+                            />
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">מספר טלפון</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all"
+                                placeholder="050-0000000"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-slate-700 mb-2">במה אפשר לעזור?</label>
+                        <textarea 
+                            id="message" 
+                            rows="4" 
+                            class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all resize-none"
+                            placeholder="ספרו לי בקצרה על הבעיה..."
+                        ></textarea>
+                    </div>
+                    <button 
+                        type="submit" 
+                        id="submitBtn"
+                        class="w-full bg-teal-600 text-white font-bold text-lg py-4 rounded-xl hover:bg-teal-700 transition-colors shadow-md flex items-center justify-center"
+                    >
+                        <span id="btnText">שליחת פנייה</span>
+                        <span id="spinner" class="hidden flex items-center gap-2">
+                            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            שולח...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2 text-white font-bold text-xl">
+                <i data-lucide="activity" class="h-6 w-6 text-teal-500"></i>
+                <span>עידן כהן</span>
+            </div>
+            <div class="text-sm">
+                © <span id="year"></span> כל הזכויות שמורות. (לצורך הדגמה בלבד)
+            </div>
+        </div>
+    </footer>
+
+    <!-- סקריפטים להפעלת האתר (אייקונים ושליחת טופס) -->
+    <script>
+        // הפעלת האייקונים
+        lucide.createIcons();
+        
+        // עדכון שנת זכויות יוצרים אוטומטית
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // קוד שמדמה שליחת טופס
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const spinner = document.getElementById('spinner');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // מראה מצב "טוען..."
+            submitBtn.disabled = true;
+            submitBtn.classList.remove('bg-teal-600', 'hover:bg-teal-700');
+            submitBtn.classList.add('bg-slate-400', 'cursor-not-allowed');
+            btnText.classList.add('hidden');
+            spinner.classList.remove('hidden');
+
+            // מדמה המתנה של שנייה וחצי
+            setTimeout(() => {
+                form.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+                form.reset();
+                
+                // מחזיר את הטופס למצב רגיל אחרי 5 שניות
+                setTimeout(() => {
+                    form.classList.remove('hidden');
+                    successMessage.classList.add('hidden');
+                    submitBtn.disabled = false;
+                    submitBtn.classList.add('bg-teal-600', 'hover:bg-teal-700');
+                    submitBtn.classList.remove('bg-slate-400', 'cursor-not-allowed');
+                    btnText.classList.remove('hidden');
+                    spinner.classList.add('hidden');
+                }, 5000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
